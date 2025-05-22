@@ -8,5 +8,10 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById('btnPort').addEventListener('click', function() {
         window.location.href = "./port.html";
     });
+
+    // Redirecionamento para a página de Física
+    document.getElementById('btnFis').addEventListener('click', function() {
+        window.location.href = "./fís.html";
+    });
 });
 
