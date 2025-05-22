@@ -1,6 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById('btnMath').addEventListener('click', function() {
-        window.location.href = "./mat.html";
-    });
+    var btnHistory = document.getElementById("btnHistory");
+    if (btnHistory) {
+        btnHistory.addEventListener("click", function() {
+            window.location.href = "hist.html";
+        });
+    }
+    // ... código para outros botões, se houver ...
 });
 
