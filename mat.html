@@ -1,14 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matemática - Site de Estudos</title>
+    <title>Matemática - 1° Ano do Colegial</title>
     <link rel="stylesheet" href="./css/mat.css">
 </head>
 <body>
-    <!-- Conteúdo para a página de Matemática -->
-    
+    <div class="container">
+        <h1>Matemática - 1° Ano do Colegial</h1>
+        
+        <!-- Aulas já existentes -->
+        <div class="card">
+            <h2>Álgebra</h2>
+            <button class="open-modal" data-modal="modal-algebra">Ver Aula</button>
+        </div>
+        <div class="card">
+            <h2>Geometria</h2>
+            <button class="open-modal" data-modal="modal-geometria">Ver Aula</button>
+        </div>
+        <div class="card">
+            <h2>Funções</h2>
+            <button class="open-modal" data-modal="modal-funcoes">Ver Aula</button>
+        </div>
+        
+        <!-- Novas aulas adicionadas -->
+        <div class="card">
+            <h2>Trigonometria</h2>
+            <button class="open-modal" data-modal="modal-trigonometria">Ver Aula</button>
+        </div>
+        <div class="card">
+            <h2>Estatística</h2>
+            <button class="open-modal" data-modal="modal-estatistica">Ver Aula</button>
+        </div>
+        <div class="card">
+            <h2>Probabilidade</h2>
+            <button class="open-modal" data-modal="modal-probabilidade">Ver Aula</button>
+        </div>
+        <div class="card">
+            <h2>Números e Operações</h2>
+            <button class="open-modal" data-modal="modal-numeros-operacoes">Ver Aula</button>
+        </div>
+        <div class="card">
+            <h2>Equações</h2>
+            <button class="open-modal" data-modal="modal-equacoes">Ver Aula</button>
+        </div>
+        <div class="card">
+            <h2>Sistemas Lineares</h2>
+            <button class="open-modal" data-modal="modal-sistemas-lineares">Ver Aula</button>
+        </div>
+    </div>
+
+    <!-- Modals para as aulas -->
+    <div id="modal-algebra" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Aula de Álgebra</h3>
+            <p>Conteúdo detalhado da aula de Álgebra...</p>
+        </div>
+    </div>
+    <div id="modal-geometria" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Aula de Geometria</h3>
+            <p>Conteúdo detalhado da aula de Geometria...</p>
+        </div>
+    </div>
+    <div id="modal-funcoes" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Aula de Funções</h3>
+            <p>Conteúdo detalhado da aula de Funções...</p>
+        </div>
+    </div>
+    <div id="modal-trigonometria" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Aula de Trigonometria</h3>
+            <p>Conteúdo detalhado da aula de Trigonometria...</p>
+        </div>
+    </div>
+    <div id="modal-estatistica" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Aula de Estatística</h3>
+            <p>Conteúdo detalhado da aula de Estatística...</p>
+        </div>
+    </div>
+    <div id="modal-probabilidade" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Aula de Probabilidade</h3>
+            <p>Conteúdo detalhado da aula de Probabilidade...</p>
+        </div>
+    </div>
+    <div id="modal-numeros-operacoes" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Aula de Números e Operações</h3>
+            <p>Conteúdo detalhado da aula de Números e Operações...</p>
+        </div>
+    </div>
+    <div id="modal-equacoes" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Aula de Equações</h3>
+            <p>Conteúdo detalhado da aula de Equações...</p>
+        </div>
+    </div>
+    <div id="modal-sistemas-lineares" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Aula de Sistemas Lineares</h3>
+            <p>Conteúdo detalhado da aula de Sistemas Lineares...</p>
+        </div>
+    </div>
+
     <script src="./js/mat.js"></script>
 </body>
 </html>
