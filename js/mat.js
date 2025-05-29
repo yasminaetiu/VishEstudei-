@@ -1,4 +1,4 @@
-\pastas alunos$\50069828881\Desktop\projetos\VishEstudei-\js\mat.js
+
 document.addEventListener('DOMContentLoaded', function() {
     // Abre os modals
     var openModalButtons = document.querySelectorAll('.open-modal');

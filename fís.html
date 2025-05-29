@@ -1,13 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css./fís.css">
+    <title>Física - 1° Ano do Colegial</title>
+    <link rel="stylesheet" href="./css/físicado.css">
 </head>
 <body>
-    <script src="./js/fís.js"></script>
-    <script src="./js/listadematérias.js"></script>
+    <div class="container">
+        <h1>Física - 1° Ano do Colegial</h1>
+
+        <div class="card">
+            <h2>Cinemática</h2>
+            <button class="open-modal" data-modal="modal-cinematica">Ver Aula</button>
+            <div id="modal-cinematica" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Aula de Cinemática</h3>
+                    <p>Nesta aula, você aprenderá os conceitos básicos de posição, velocidade, aceleração e seus gráficos.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Dinâmica</h2>
+            <button class="open-modal" data-modal="modal-dinamica">Ver Aula</button>
+            <div id="modal-dinamica" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Aula de Dinâmica</h3>
+                    <p>Exploração dos conceitos de força, massa, aceleração e as relações que regem o movimento.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Leis de Newton</h2>
+            <button class="open-modal" data-modal="modal-newton">Ver Aula</button>
+            <div id="modal-newton" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Aulas sobre as Leis de Newton</h3>
+                    <p>Estudo detalhado das três leis fundamentais do movimento propostas por Newton.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Energia e Trabalho</h2>
+            <button class="open-modal" data-modal="modal-energia">Ver Aula</button>
+            <div id="modal-energia" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Aula de Energia e Trabalho</h3>
+                    <p>Conteúdos sobre como energia é transformada e a definição de trabalho na física.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Ondulatória</h2>
+            <button class="open-modal" data-modal="modal-ondulatoria">Ver Aula</button>
+            <div id="modal-ondulatoria" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Aula de Ondulatória</h3>
+                    <p>Aborda os princípios das ondas, características e aplicações em fenômenos físicos.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Termologia</h2>
+            <button class="open-modal" data-modal="modal-termologia">Ver Aula</button>
+            <div id="modal-termologia" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Aula de Termologia</h3>
+                    <p>Explanações sobre temperatura, calor, e as transformações térmicas na matéria.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Óptica</h2>
+            <button class="open-modal" data-modal="modal-optica">Ver Aula</button>
+            <div id="modal-optica" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h3>Aula de Óptica</h3>
+                    <p>Estudo dos fenômenos da luz, formação de imagens e lentes, espelhos e outros dispositivos ópticos.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/físicado.js"></script>
 </body>
 </html>
