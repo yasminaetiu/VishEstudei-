@@ -3,96 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biologia - 1° Ano do Colegial</title>
+    <title>Biologia - Site de Estudos</title>
     <link rel="stylesheet" href="./css/bio.css">
 </head>
 <body>
     <div class="container">
-        <h1>Biologia - 1° Ano do Colegial</h1>
-        <div class="subjects-container">
-            <div class="subject-card">
-                <h2>Células e Tecidos</h2>
-                <p>Estude as estruturas celulares e os tipos de tecidos.</p>
-                <button class="open-modal" data-modal="celulasModal">Mais Detalhes</button>
-            </div>
-            <div class="subject-card">
-                <h2>Genética Básica</h2>
-                <p>Aprenda os fundamentos da hereditariedade e dos genes.</p>
-                <button class="open-modal" data-modal="geneticaModal">Mais Detalhes</button>
-            </div>
-            <div class="subject-card">
-                <h2>Evolução</h2>
-                <p>Conheça os princípios da teoria evolucionária.</p>
-                <button class="open-modal" data-modal="evolucaoModal">Mais Detalhes</button>
-            </div>
-            <div class="subject-card">
-                <h2>Ecologia</h2>
-                <p>Entenda as relações dos seres vivos com o meio ambiente.</p>
-                <button class="open-modal" data-modal="ecologiaModal">Mais Detalhes</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modals -->
-    <div id="celulasModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
+        <h1>Biologia</h1>
+        
+        <!-- Container para o tema "Células e Tecidos" -->
+        <div class="subject-card">
             <h2>Células e Tecidos</h2>
-            <p>Conteúdo aprofundado sobre estruturas celulares e classificação dos tecidos.</p>
+            <p>Estude as estruturas e funções das células e a classificação dos tecidos.</p>
+            <button onclick="window.location.href='https://youtube.com/playlist?list=PLjhKeajE1SZwxCqwG724sv1hwwG25Reha&si=vdRsu8HKnm5PWhPZ'">
+                Mais detalhes
+            </button>
         </div>
     </div>
-    
-    <div id="geneticaModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Genética Básica</h2>
-            <p>Detalhes sobre os mecanismos da hereditariedade, DNA, RNA e mutações.</p>
-        </div>
-    </div>
-    
-    <div id="evolucaoModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Evolução</h2>
-            <p>Explicação sobre a teoria da evolução, seleção natural e adaptações.</p>
-        </div>
-    </div>
-    
-    <div id="ecologiaModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Ecologia</h2>
-            <p>Análise das relações ecológicas, cadeias alimentares e impactos ambientais.</p>
-        </div>
-    </div>
-
-    <script>
-        // Abre o modal
-        const openButtons = document.querySelectorAll('.open-modal');
-        openButtons.forEach(button => {
-            button.addEventListener('click', function() {
-                const modalId = this.getAttribute('data-modal');
-                const modal = document.getElementById(modalId);
-                if(modal) {
-                    modal.style.display = 'flex';
-                }
-            });
-        });
-    
-        // Fecha o modal ao clicar no "x"
-        const closeButtons = document.querySelectorAll('.modal .close');
-        closeButtons.forEach(btn => {
-            btn.addEventListener('click', function() {
-                this.closest('.modal').style.display = 'none';
-            });
-        });
-    
-        // Fecha o modal ao clicar fora do conteúdo
-        window.addEventListener('click', function(e) {
-            if(e.target.classList.contains('modal')) {
-                e.target.style.display = 'none';
-            }
-        });
-    </script>
 </body>
 </html>
