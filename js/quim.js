@@ -1,7 +1,7 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener('DOMContentLoaded', function() {
     console.log("Página de Química carregada!");
 
-    // Alterna a visibilidade de seções com informações extras
+    // Exemplo: Alterna a visibilidade de seções com informações extras quando clicada
     const toggleButtons = document.querySelectorAll('.toggle-details');
     toggleButtons.forEach(function(button) {
         button.addEventListener('click', function() {
@@ -12,9 +12,4 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
-
-    document.getElementById('btnMath').addEventListener('click', function() {
-        window.location.href = "./mat.html";
-    });
 });
-

@@ -1,0 +1,27 @@
+/* Estilos básicos para a página de Física */
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #0078d4;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    font-size: 1rem;
+    color: #333;
+}
