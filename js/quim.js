@@ -13,3 +13,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+function showVideo(){
+    document.getElementById('videoContainer').style.display = 'block';
+}
+function showTable(){
+    document.getElementById('periodicTable').style.display = 'block';
+}

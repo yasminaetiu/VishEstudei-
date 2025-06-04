@@ -7,9 +7,119 @@
     <link rel="stylesheet" href="./css/quim.css">
 </head>
 <body>
-    <h1>Química</h1>
-    <p>Bem-vindo à página de Química!</p>
-
+    <div class="container">
+        <h1>Química</h1>
+        
+        <!-- Tema: Reações Químicas -->
+        <div class="subject-card">
+            <h2>Reações Químicas</h2>
+            <p>Estude os tipos de reações e os fatores que influenciam a velocidade e o equilíbrio das reações.</p>
+            <button onclick="window.location.href='https://www.youtube.com/watch?v=VrUvy1N66U0&list=PL7z9gXHrlv-G4ziOHySuVIYSZG5kJOHQK&pp=0gcJCWMEOCosWNin'">
+                Mais detalhes
+            </button>
+        </div>
+        
+        <!-- Tema: Tabela Periódica -->
+        <div class="subject-card">
+            <h2>Tabela Periódica</h2>
+            <p>Conheça os elementos químicos, suas propriedades e como estão organizados na tabela periódica.</p>
+            <button onclick="showVideo()">Mais detalhes</button>
+            <div id="videoContainer" style="display: none; margin-top: 20px;">
+                <!-- Vídeo embed do YouTube -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/t9lRu46zdEU?list=PL7uUJC3tSB3wDr3j6bLhwSyJcoabkNFDL" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <!-- Botão para visualizar a tabela periódica -->
+                <button onclick="showTable()" class="btn-show-table">Visualizar a tabela periódica</button>
+                <!-- Imagem da tabela periódica (inicialmente oculta) -->
+                <img id="periodicTable" src="https://static.todamateria.com.br/upload/ta/be/tabelaperiodica0-cke.jpg" alt="Tabela Periódica" style="display: none; width:100%; max-width:560px; margin-top: 20px;">
+            </div>
+        </div>
+        
+        <!-- Tema: Ligações Químicas -->
+        <div class="subject-card">
+            <h2>Ligações Químicas</h2>
+            <p>Entenda os diferentes tipos de ligações químicas e suas características.</p>
+            <button onclick="window.location.href='https://www.youtube.com/watch?v=iClQTmICfaU&list=PLjyDQiQ7gcAHNOLfhY_AKlfegbIZPZaTu'">
+                Mais detalhes
+            </button>
+        </div>
+        
+        <!-- Tema: Estequiometria -->
+        <div class="subject-card">
+            <h2>Estequiometria</h2>
+            <p>Aprenda a calcular as quantidades envolvidas nas reações químicas.</p>
+            <button onclick="window.location.href='https://www.youtube.com/watch?v=SDyHraOMZsI&list=PLkEeNC9TIQxcrfN3dA_6swGFu14ztuOmr'">
+                Mais detalhes
+            </button>
+        </div>
+        
+        <!-- Tema: Química Orgânica -->
+        <div class="subject-card">
+            <h2>Química Orgânica</h2>
+            <p>Explore os compostos orgânicos e suas aplicações no dia a dia.</p>
+            <button onclick="window.location.href='https://www.youtube.com/watch?v=ZpilLqOC7p4&list=PL7uUJC3tSB3xINPTt34jvq9dVxtloEJZi'">
+                Mais detalhes
+            </button>
+        </div>
+        
+        <!-- Tema: Química Inorgânica -->
+        <div class="subject-card">
+            <h2>Química Inorgânica</h2>
+            <p>Estude os compostos inorgânicos e as suas propriedades.</p>
+            <button onclick="window.location.href='https://www.youtube.com/watch?v=U7no8O1hrLE&list=PLrsojwmNR8-HaUcu3blD5k6csXG-Jmv3I'">
+                Mais detalhes
+            </button>
+        </div>
+        
+        <!-- Tema: Ligações Intermoleculares -->
+        <div class="subject-card">
+            <h2>Ligações Intermoleculares</h2>
+            <p>Estude as forças intermoleculares que influenciam as propriedades físicas dos compostos.</p>
+            <button onclick="window.location.href='https://www.youtube.com/watch?v=WRTwCeW_dv4&list=PL4If1xXbEdeMJn0z74Y798nyFZGWQwdWP'">
+                Mais detalhes
+            </button>
+        </div>
+        
+        <!-- Tema: Química Analítica -->
+        <div class="subject-card">
+            <h2>Química Analítica</h2>
+            <p>Aprenda técnicas de análise quantitativa e qualitativa em química.</p>
+            <button onclick="window.location.href='https://www.youtube.com/watch?v=HFzThPDFMpQ&list=PLgAPmS-XKSPrDS-e0BPKneeBVFHzOmzY0'">
+                Mais detalhes
+            </button>
+        </div>
+        
+        <!-- Tema: Química Ambiental -->
+        <div class="subject-card">
+            <h2>Química Ambiental</h2>
+            <p>Descubra como os processos químicos afetam o meio ambiente.</p>
+            <button onclick="window.location.href='https://www.youtube.com/watch?v=HFzThPDFMpQ&list=PLgAPmS-XKSPrDS-e0BPKneeBVFHzOmzY0'">
+                Mais detalhes
+            </button>
+        </div>
+        
+        <!-- Tema: Bioquímica -->
+        <div class="subject-card">
+            <h2>Bioquímica</h2>
+            <p>Explore as reações químicas que ocorrem nos seres vivos e como elas mantêm a vida.</p>
+            <button onclick="window.location.href='https://www.youtube.com/watch?v=ZVKB4F7XpHo&list=PLj4yVuRqCKGHdbU29GiI-RQA5CL2go2Ga&pp=0gcJCWMEOCosWNin'">
+                Mais detalhes
+            </button>
+        </div>
+    </div>
+    
     <script src="./js/quim.js"></script>
+    <script>
+        function showVideo(){
+            document.getElementById('videoContainer').style.display = 'block';
+        }
+        function showTable(){
+            var img = document.getElementById('periodicTable');
+            if(img.style.display === 'none' || img.style.display === ''){
+                img.style.display = 'block';
+            } else {
+                img.style.display = 'none';
+            }
+        }
+    </script>
 </body>
 </html>
